@@ -150,7 +150,6 @@ header .textos-header {
 }
 
 
-
 .card_texto {
 
     padding: 50px;
@@ -193,7 +192,6 @@ h2 {
 }
 
 
-    
 
 /*contenedor de la tabla*/
 #main_container {
@@ -205,11 +203,10 @@ h2 {
 
 /*color de la tabla //posicionamiento //alineacion de texto*/
 table {
-    font-family: 'open sans';
-    /*background-color: rgb(191, 93, 248);*/
+    background-color: rgb(173, 73, 231);
     text-align: center;
     width: 100%;
-    border-collapse: collapse;
+    border-radius: 5px;
 
 }
 
@@ -217,60 +214,12 @@ table {
 th,
 td {
 
-    border:1px solid blanchedalmond;
-    padding: 12px 15px;
+    border: solid 1px blanchedalmond;
+    padding: 5%;
     border-radius: 5px;
 }
 
-@media (max-width: 500px) {
-
-.table {
-display: none;
-
-}
-
-.table, .table tr, .table th, .table td {
-
-    display: block;
-    width: 100%;
-} 
-
-.table tr{
-
-margin-bottom: 15px;
-
-
-}
-
-
-.table td {
-text-align: right;
-padding-left: 50%;
-text-align: right;
-position: relative;
-
-
-}
-
-.table td::before {
-
-content: attr(data-label);
-position: absolute;
-left: 0;
-width: 50%;
-padding-left: 15px;
-font-size: 15px;
-font-weight: bold;
-text-align: left;
-
-}
-
-
-
-
-
-}
-/*CAMBIO DE COLOR DEL ENCABEZADO DEL CUADRO**
+/*CAMBIO DE COLOR DEL ENCABEZADO DEL CUADRO*/
 thead {
 
     background-color: lemonchiffon;
@@ -278,11 +227,11 @@ thead {
 
 }
 
-/*RESALTAR CON OTRO COLOR EL CUADRO AL POSICIONAR EL PULSOR SOBRE EL CUADRO**
+/*RESALTAR CON OTRO COLOR EL CUADRO AL POSICIONAR EL PULSOR SOBRE EL CUADRO*/
 tr:hover {
-    background-color: rgb(219, 200, 27);*/
+    background-color: rgb(219, 200, 27);
 
-
+}
 
 .cardMarcas__comerciales {
 
@@ -295,59 +244,171 @@ tr:hover {
 
 .servicio-canal-de-venta {
 
-    display: flex;
+    display:flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
     margin-bottom: 60px;
 }
 
-/*Formulario*/
-.formulario {
-
-    background-color: rgb(231, 25, 180);
-    font-size: 20px;
-    border-radius: 8px;
-    padding: 20px;
+/*--------estilizado para el Formulario------------*/
+.formulario{
+    background-color: #d1e4e9;
     margin: auto;
-    width: 325px;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    
+}
+
+.form_title {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.form_paragraph{
+
+    font-weight: 300;
+}
+
+.form_link{
+    font-weight: 400;
+    color:black;
+
 }
 
 
+.form_container{
+
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+
+.form_group{
+
+    position: relative;
+    --color: rgb(56, 38, 38);
+
+}
+
+.form_input{
+    width: 100%;
+    background: none;
+    color:rgb(20, 16, 16);
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: 'open sans';
+}
+
+.form_input:not(:placeholder-shown) {
+    color: #4d4646;
+
+}
+
+
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label {
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color:rgb(70, 127, 225);
+
+}
+.form_label{
+
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+
+}
+
+.form_submit{
+
+    background: rgb(70, 127, 225);
+    color:#fff;
+    font-family: 'open sans';
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 1em 0;
+    border: none;
+    border-radius: .5em;
+}
+
+
+.form_line{
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 1px;
+background-color: rgb(70, 127, 225);
+transform: scale(0);
+transform: left bottom;
+transition: transform .4s;
+
+}
+
+
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label {
+
+    transform: scale(1);
+}
+/*-------------------------------------------------*/
+/*---------@media para el formulario----------*/ 
+
+@media (max-width:425px) {
+.form_title {
+    font-size: 1.8rem;
+}
+
+}
+
+
+
 @media screen and (max-width:900px) {
-    header {
+    header{
         background-position: center;
     }
 
-    .contenedor-sobre-nosotros {
+    .contenedor-sobre-nosotros{
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .contenedor-sobre-nosotros .contenido-textos {
+    .contenedor-sobre-nosotros .contenido-textos{
         width: 90%;
     }
 
-    .imagen-about-us {
+    .imagen-about-us{
         width: 90%;
     }
 
     /*clientes*/
 
-    .cards {
+    .cards{
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .cards .card {
+    .cards .card{
         width: 90%;
     }
 
-    .cards .card:first-child {
+    .cards .card:first-child{
         margin-bottom: 30px;
     }
+
 
     /*servicios*/
 

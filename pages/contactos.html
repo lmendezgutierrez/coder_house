@@ -44,54 +44,34 @@
 
 
                 <div class="formulario">
-                    <form action="formulario" method="POST">
-                        <!--Nombre-->
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" class="field" placeholder="Nombre" />
-                        <hr>
+                    <h5 class="form_title">Inicia Sesión</h5>
+                    <p class="form_paragraph">¿Aún no tienes cuenta? <a href=# class="form_link">Entra Aquí </a></p>
+                <div class="form_container">
 
+                    <div class="form_group">
+                        <input type="text" id="nombre" class="form_input" placeholder="Nombre" /> 
+                        <label for="name" class="form_label"> Nombre</label>
+                        <spam class="form_line"></spam>
+                    
+                    </div>
 
-
-                        <!--correo electronico--> <label for="email">email</label>
-                        <input type="email" id="email" class="field" placeholder="email de contacto" />
-                        <hr>
-
-                        <!--seleccion multiple-->
-                        <label for="opciones">Selecciona tu Comuna</label>
-                        <select class="field" id="opciones">
-                            <option value="" Select disable>Seleccione una comuna</option>
-                            <option value="Santiago">Santiago</option>
-                            <option value="Las Condes">Las Condes</option>
-                            <option value="Macul">Macul</option>
-                            <option value="Lo Espejo">Lo Espejo</option>a
-                        </select>
-                        <hr>
-
-                        <!--datos del tercero-->
-                        <label for="opciones">Quien recibirá tu pedido?</label>
-                        <span>Yo lo recibiré</span>
-                        <input type="radio" id="destinatario" />
-                        <span>Lo recibirá un tercero</span>
-                        <input type="radio" id="destinatario" />
-                        <hr>
-                        </select>
-
-                        <!--check list-->
-                        <label for="¿Deseas recibir boletin informativo?">¿Deseas recibir boletin
-                            informativo?</label>
-                        <input type="checkbox" id="¿Deseas recibir boletin informativo?" class="field"
-                            placeholder="¿Deseas recibir boletin informativo?" />
-                        <hr>
-
-                        <!--comentarios-->
-                        <label for="comentario">Comentario</label>
-                        <textarea cols="33" rows="10" id="comentario" placeholder="ingrese comentario"
-                            class="field"></textarea>
-                        <hr>
-
-                        <!--botones-->
-                        <button type="button" class="btn-button">Limpiar Formulario</button>
-                        <button type="button" class="btn-button">Enviar Formulario</button>
+                    <div class="form_group">
+                        <input type="text" id="user" class="form_input" placeholder="Usuario" /> 
+                        <label for="name" class="form_label"> Usuario</label>
+                        <spam class="form_line"></spam>
+                    
+                    </div>
+                    
+                    <div class="form_group">
+                        <input type="text" id="password" class="form_input" placeholder="Contraseña" /> 
+                        <label for="name" class="form_label"> Contraseña</label>
+                        <spam class="form_line"></spam>
+                    
+                    </div>
+                    
+                    <input type="submit" class="form_submit" value="Entrar">
+                    
+                    </div>
 
 
                     </form>
