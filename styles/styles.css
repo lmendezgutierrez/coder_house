@@ -47,18 +47,20 @@ nav {
 nav>a {
     color: rgb(255, 255, 255);
     font-weight: 300;
+    font-size: 25px;
     text-decoration: none;
     margin-right: 30px;
+
 }
 
 nav>a:hover {
-    color: rgb(86, 8, 195);
+    color: rgb(241, 26, 234);
     font-weight: 300;
     text-decoration: none;
     margin-right: 30px;
 }
 
-header .textos-header {
+/*header .textos-header {
     display: flex;
     height: 100%;
     width: 100%;
@@ -66,13 +68,14 @@ header .textos-header {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-}
+    rgb(86, 8, 195)*/
 
-.textos-header h1 {
+
+/*.textos-header h1 {
     margin-top: 30px;
     font-size: 60px;
-    color: white;
-}
+    color: white;*/
+
 
 .textos-header h2 {
     font-size: 50px;
@@ -244,7 +247,7 @@ tr:hover {
 
 .servicio-canal-de-venta {
 
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
@@ -252,14 +255,14 @@ tr:hover {
 }
 
 /*--------estilizado para el Formulario------------*/
-.formulario{
+.formulario {
     background-color: #d1e4e9;
     margin: auto;
     width: 90%;
     max-width: 400px;
     padding: 4.5em 3em;
     box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
-    
+
 }
 
 .form_title {
@@ -267,36 +270,36 @@ tr:hover {
     margin-bottom: .5rem;
 }
 
-.form_paragraph{
+.form_paragraph {
 
     font-weight: 300;
 }
 
-.form_link{
+.form_link {
     font-weight: 400;
-    color:black;
+    color: black;
 
 }
 
 
-.form_container{
+.form_container {
 
     margin-top: 3em;
     display: grid;
     gap: 2.5em;
 }
 
-.form_group{
+.form_group {
 
     position: relative;
     --color: rgb(56, 38, 38);
 
 }
 
-.form_input{
+.form_input {
     width: 100%;
     background: none;
-    color:rgb(20, 16, 16);
+    color: rgb(20, 16, 16);
     font-size: 1rem;
     padding: .6em .3em;
     border: none;
@@ -311,14 +314,15 @@ tr:hover {
 }
 
 
-.form_input:focus + .form_label,
-.form_input:not(:placeholder-shown) + .form_label {
+.form_input:focus+.form_label,
+.form_input:not(:placeholder-shown)+.form_label {
     transform: translateY(-12px) scale(.7);
     transform-origin: left top;
-    color:rgb(70, 127, 225);
+    color: rgb(70, 127, 225);
 
 }
-.form_label{
+
+.form_label {
 
     color: var(--color);
     cursor: pointer;
@@ -330,10 +334,10 @@ tr:hover {
 
 }
 
-.form_submit{
+.form_submit {
 
     background: rgb(70, 127, 225);
-    color:#fff;
+    color: #fff;
     font-family: 'open sans';
     font-weight: 300;
     font-size: 1rem;
@@ -343,69 +347,70 @@ tr:hover {
 }
 
 
-.form_line{
-position: absolute;
-bottom: 0;
-left: 0;
-width: 100%;
-height: 1px;
-background-color: rgb(70, 127, 225);
-transform: scale(0);
-transform: left bottom;
-transition: transform .4s;
+.form_line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(70, 127, 225);
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s;
 
 }
 
 
-.form_input:focus + .form_label,
-.form_input:not(:placeholder-shown) + .form_label {
+.form_input:focus+.form_label,
+.form_input:not(:placeholder-shown)+.form_label {
 
     transform: scale(1);
 }
+
 /*-------------------------------------------------*/
-/*---------@media para el formulario----------*/ 
+/*---------@media para el formulario----------*/
 
 @media (max-width:425px) {
-.form_title {
-    font-size: 1.8rem;
-}
+    .form_title {
+        font-size: 1.8rem;
+    }
 
 }
 
 
 
 @media screen and (max-width:900px) {
-    header{
+    header {
         background-position: center;
     }
 
-    .contenedor-sobre-nosotros{
+    .contenedor-sobre-nosotros {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .contenedor-sobre-nosotros .contenido-textos{
+    .contenedor-sobre-nosotros .contenido-textos {
         width: 90%;
     }
 
-    .imagen-about-us{
+    .imagen-about-us {
         width: 90%;
     }
 
     /*clientes*/
 
-    .cards{
+    .cards {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .cards .card{
+    .cards .card {
         width: 90%;
     }
 
-    .cards .card:first-child{
+    .cards .card:first-child {
         margin-bottom: 30px;
     }
 
@@ -481,7 +486,7 @@ transition: transform .4s;
             width: 90px;
             height: 90px;
         }
-       
+
 
     }
 }
@@ -492,29 +497,29 @@ h5 {
     text-align: center;
 }
 
-.container{
+.container {
 
     display: grid;
-    grid-gap:5px;
-    grid-template-areas: 
-    'A'
-    'B'
-    'C'
-    'D';
+    grid-gap: 5px;
+    grid-template-areas:
+        'A'
+        'B'
+        'C'
+        'D';
 }
 
 
 
 @media (min-width: 576px) {
     .container {
-grid-template-columns: 1.52fr 1fr 1fr 1525fr;
-grid-template-areas: 'A B C D';
+        grid-template-columns: 1.52fr 1fr 1fr 1525fr;
+        grid-template-areas: 'A B C D';
 
     }
 }
 
 img:nth-child(1) {
-grid-area: A;
+    grid-area: A;
 
 }
 
@@ -532,7 +537,3 @@ img:nth-child(4) {
     grid-area: D;
 
 }
-
-
-
-
