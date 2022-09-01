@@ -1,0 +1,29 @@
+{
+  "name": "prueba-npm-init",
+  "version": "1.0.0",
+  "description": "Esto es una prueba de npm init.",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "node-sass --include-path scss styles/scss/prueba.scss styles/css/pruebacss.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmendezgutierrez/coder_house.git"
+  },
+  "keywords": [
+    "npm",
+    "init",
+    "prueba"
+  ],
+  "author": "Mendez Gutierrez Leicy B.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lmendezgutierrez/coder_house/issues"
+  },
+  "homepage": "https://github.com/lmendezgutierrez/coder_house#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
