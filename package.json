@@ -4,7 +4,7 @@
   "description": "Esto es una prueba de npm init.",
   "main": "index.html",
   "scripts": {
-    "build-css": "node-sass --include-path scss styles/scss/prueba.scss styles/css/pruebacss.css",
+    "build-css": "node-sass --include-path scss styles/scss/prueba.scss styles/css/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
